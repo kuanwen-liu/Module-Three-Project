@@ -61,7 +61,7 @@ let boracayHotel = new RentalProperty('Hotel Le Soliel De Boracay', 120, 8, 'Bal
 
 let hennanResort = new RentalProperty('Henann Resort Alona Beach', 160, 8.9, 'Panglao Island', 30, 6, 'Free WiFi, Air Conditioned, TV, Pool, and Gym');
 
-let palawanHotel = new SpecialRate('Daluyon Beach and Mountain Resort', 155, 8.7, 'Puerto Princesa, Palawan Island', 15, 4, 'Free WiFi, TV, Pool, and Spa', 0.95);
+let palawanHotel = new SpecialRate('Daluyon Beach and Mountain Resort', 155, 8.7, 'Puerto Princesa, Palawan Island', 15, 4, 'Free WiFi, TV, Pool, and Spa', 0.8);
 
 let uptownHotel = new SuperHost('Boracay Uptown', 107, 8, 'Balabag, Boracay Island', 20, 11, 'Free WiFi, Pets, Air Conditioned, Pool, and Spa', 9.5);
 
