@@ -4,6 +4,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+#myCarousel {
 	margin-bottom: 80px;
 }
 
