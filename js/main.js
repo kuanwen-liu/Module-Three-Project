@@ -12,7 +12,7 @@ class RentalProperty {
     }
     // getter methods
     getName() {
-        return this.name;
+        return 'Hotel Name: ' + this.name;
     };
     getPrice() {
         return this.price;
@@ -21,16 +21,16 @@ class RentalProperty {
         return this.rating;
     }
     getLocation() {
-        return this.location;
+        return 'Location: ' + this.location;
     }
     getRooms() {
-        return this.rooms;
+        return 'Rooms: ' + this.rooms;
     }
     getAvailability() {
-        return this.availability;
+        return 'Available Rooms: ' + this.availability;
     }
     getFeatures() {
-        return this.features;
+        return 'Room Features: ' + this.features;
     }
 }
 
@@ -52,7 +52,7 @@ class SuperHost extends RentalProperty {
         this.hostRating = hostRating;
     }
     getHostRating() {
-        return this.hostRating;
+        return 'Host Rating: ' + this.hostRating;
     }
 }
 
@@ -74,23 +74,23 @@ let p = document.querySelectorAll('p');
 
 
 // Display Fitst Property
-h2[0].innerHTML = 'Hotel Name: ' + boracayHotel.getName();
+h2[0].innerHTML = boracayHotel.getName();
 
 //the event when click button displays the description
 infoBtn[0].addEventListener('click', function() {
 
     p[0].innerHTML = 'Price: ' + boracayHotel.getPrice() + '<br />' +
         'Rating: ' + boracayHotel.getRating() + '/10<br />' +
-        'Location: ' + boracayHotel.getLocation() + '<br />' +
-        'Rooms: ' + boracayHotel.getRooms() + '<br />' +
-        'Room Features: ' + boracayHotel.getFeatures() + '<br />' +
-        '<button class="btn1">Available Rooms</button>';
+        boracayHotel.getLocation() + '<br />' +
+        boracayHotel.getRooms() + '<br />' +
+        boracayHotel.getFeatures() + '<br />' +
+        '<button class="btn1 btn btn-primary">Available Rooms</button>';
 
     let btn = document.querySelector('.btn1');
 
     //Displays the availability
     btn.addEventListener('click', function() {
-        p[1].innerHTML = 'Available Rooms: ' + boracayHotel.getAvailability();
+        p[1].innerHTML = boracayHotel.getAvailability();
     });
 
 });
@@ -104,23 +104,23 @@ about[0].addEventListener('click', function() {
 
 
 // Display Second Property
-h2[1].innerHTML = 'Hotel Name: ' + hennanResort.getName();
+h2[1].innerHTML = hennanResort.getName();
 
 //the event when click button displays the description
 infoBtn[1].addEventListener('click', function() {
 
     p[2].innerHTML = 'Price: ' + hennanResort.getPrice() + '<br />' +
         'Rating: ' + hennanResort.getRating() + '/10<br />' +
-        'Location: ' + hennanResort.getLocation() + '<br />' +
-        'Rooms: ' + hennanResort.getRooms() + '<br />' +
-        'Room Features: ' + hennanResort.getFeatures() + '<br />' +
-        '<button class="btn2">Available Rooms</button>';
+        hennanResort.getLocation() + '<br />' +
+        hennanResort.getRooms() + '<br />' +
+        hennanResort.getFeatures() + '<br />' +
+        '<button class="btn2 btn btn-primary">Available Rooms</button>';
 
     let btn = document.querySelector('.btn2');
 
     //Displays the availability
     btn.addEventListener('click', function() {
-        p[3].innerHTML = 'Available Rooms: ' + hennanResort.getAvailability();
+        p[3].innerHTML = hennanResort.getAvailability();
     });
 
 });
@@ -135,7 +135,7 @@ about[1].addEventListener('click', function() {
 
 
 // Display Third Property
-h2[2].innerHTML = 'Hotel Name: ' + palawanHotel.getName();
+h2[2].innerHTML = palawanHotel.getName();
 
 //the event when click button displays the description
 infoBtn[2].addEventListener('click', function() {
@@ -143,16 +143,16 @@ infoBtn[2].addEventListener('click', function() {
 
     p[4].innerHTML = 'Price: ' + palawanHotel.getPrice() * palawanHotel.getSpecialR() + '<span>Original Price: ' + palawanHotel.getPrice() + '</span><span> Discount: ' + value + '% OFF </span><br />' +
         'Rating: ' + palawanHotel.getRating() + '/10<br />' +
-        'Location: ' + palawanHotel.getLocation() + '<br />' +
-        'Rooms: ' + palawanHotel.getRooms() + '<br />' +
-        'Room Features: ' + palawanHotel.getFeatures() + '<br />' +
-        '<button class="btn3">Available Rooms</button>';
+        palawanHotel.getLocation() + '<br />' +
+        palawanHotel.getRooms() + '<br />' +
+        palawanHotel.getFeatures() + '<br />' +
+        '<button class="btn3 btn btn-primary">Available Rooms</button>';
 
     let btn = document.querySelector('.btn3');
 
     //Displays the availability
     btn.addEventListener('click', function() {
-        p[5].innerHTML = 'Available Rooms: ' + palawanHotel.getAvailability();
+        p[5].innerHTML = palawanHotel.getAvailability();
     });
 
 });
@@ -165,24 +165,24 @@ about[2].addEventListener('click', function() {
 
 
 // Display Fourth Property
-h2[3].innerHTML = 'Hotel Name: ' + uptownHotel.getName();
+h2[3].innerHTML = uptownHotel.getName();
 
 //the event when click button displays the description
 infoBtn[3].addEventListener('click', function() {
 
     p[6].innerHTML = 'Price: ' + uptownHotel.getPrice() + '<br />' +
         'Rating: ' + uptownHotel.getRating() + '/10<br />' +
-        'Location: ' + uptownHotel.getLocation() + '<br />' +
-        'Rooms: ' + uptownHotel.getRooms() + '<br />' +
-        'Room Features: ' + uptownHotel.getFeatures() + '<br />' +
-        'Host Rating: ' + uptownHotel.getHostRating() + '<br />' +
-        '<button class="btn4">Available Rooms</button>';
+        uptownHotel.getLocation() + '<br />' +
+        uptownHotel.getRooms() + '<br />' +
+        uptownHotel.getFeatures() + '<br />' +
+        uptownHotel.getHostRating() + '<br />' +
+        '<button class="btn4 btn btn-primary">Available Rooms</button>';
 
     let btn = document.querySelector('.btn4');
 
     //Displays the availability
     btn.addEventListener('click', function() {
-        p[7].innerHTML = 'Available Rooms: ' + uptownHotel.getAvailability();
+        p[7].innerHTML = uptownHotel.getAvailability();
     });
 
 });
