@@ -30,11 +30,6 @@ span {
 	padding: 3px;
 }
 
-#previous,
-#next {
-	margin-top: -85px;
-}
-
 .infoBtn:hover,
 .about:hover {
 	background-color: #e6e9ed;
