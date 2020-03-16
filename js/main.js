@@ -34,9 +34,10 @@ class RentalProperty {
     }
 }
 
-//sub class SpecialRate
+//create a sub class name SpecialRate that inherits from RentalProperty
 class SpecialRate extends RentalProperty {
     constructor(name, price, rating, location, rooms, availability, features, specialR) {
+        // use super to initialize those properties in the main class
         super(name, price, rating, location, rooms, availability, features);
         this.specialR = specialR;
     }
@@ -45,9 +46,10 @@ class SpecialRate extends RentalProperty {
     }
 }
 
-//sub class Super Host Porperty
+//create a sub class name SuperHost that inherits from RentalProperty
 class SuperHost extends RentalProperty {
     constructor(name, price, rating, location, rooms, availability, features, hostRating) {
+        // use super to initialize those properties in the main class
         super(name, price, rating, location, rooms, availability, features);
         this.hostRating = hostRating;
     }
@@ -56,7 +58,7 @@ class SuperHost extends RentalProperty {
     }
 }
 
-// object instances
+// instantiate new object
 let boracayHotel = new RentalProperty('Hotel Le Soliel De Boracay', 120, 8, 'Balabag, Boracay Island', 10, 1, 'Free WiFi, Air Conditioned, TV, Pool, and Spa');
 
 let hennanResort = new RentalProperty('Henann Resort Alona Beach', 160, 8.9, 'Panglao Island', 30, 6, 'Free WiFi, Air Conditioned, TV, Pool, and Gym');
@@ -65,7 +67,7 @@ let palawanHotel = new SpecialRate('Daluyon Beach and Mountain Resort', 155, 8.7
 
 let uptownHotel = new SuperHost('Boracay Uptown', 107, 8, 'Balabag, Boracay Island', 20, 11, 'Free WiFi, Pets, Air Conditioned, Pool, and Spa', 9.5);
 
-//HTML elements and text nodes
+// get HTML elements
 let h2 = document.querySelectorAll('h2');
 let about = document.querySelectorAll('.about');
 let infoBtn = document.querySelectorAll('.infoBtn');
